@@ -113,3 +113,16 @@ source $ZSH/oh-my-zsh.sh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+if [ -f "$HOME/omnetpp-6.3.0/setenv" ]; then
+    source "$HOME/omnetpp-6.3.0/setenv" > /dev/null
+fi
+
+export NVM_DIR="$HOME/.config/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export GDK_BACKEND=x11
+export QT_QPA_PLATFROMTHEME=kde
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"

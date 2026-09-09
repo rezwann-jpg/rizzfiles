@@ -1,4 +1,5 @@
 [color]
+theme = "noctalia"
 background = 'default'
 gradient = 1
 gradient_count = 6
